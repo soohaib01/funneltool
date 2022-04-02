@@ -1,0 +1,184 @@
+//-----------wpfnl-multistep-naviation------------
+.wpfnl-checkout-form-wpfnl-multistep,
+.wpfnl-multistep {
+	.wpfnl-multistep-wizard {
+		display: flex;
+		flex-flow: row wrap;
+		position: relative;
+		margin-bottom: 40px;
+		list-style: none;
+    	padding: 0;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 24px;
+			left: 0;
+			width: 100%;
+			height: 2px;
+			background: #eee;
+			z-index: 0;
+		}
+
+		& > li {
+			flex: 1;
+			text-align: center;
+
+			&:before {
+				content: '';
+				position: absolute;
+				top: 24px;
+				left: 0;
+				width: 100%;
+				height: 2px;
+				background: transparent;
+			}
+
+			&.completed:before,
+			&.current:before {
+				background: $primary-color;
+			}
+		}
+
+		li {
+			position: relative;
+			z-index: 1;
+
+			
+			button {
+				color: #363B4E!important;
+				background: transparent!important;
+				border: none;
+				box-shadow: none;
+				outline: none;
+				border-radius: 0;
+				padding: 0;
+				margin: 0;
+				box-sizing: border-box;
+				font-weight: 700;
+				text-decoration: none;
+				position: relative;
+    			z-index: 2;
+			}
+
+			button:focus,
+			button:hover {
+				color: #363B4E!important;
+				background: transparent!important;
+				border: none;
+				box-shadow: none;
+				outline: none;
+				border-radius: 0;
+			}
+
+			.step-icon {
+				width: 50px;
+				height: 50px;
+				border: 4px solid #ffffff;
+				display: flex;
+				flex-flow: column;
+				align-items: center;
+				justify-content: center;
+				margin: 0 auto 10px;
+				border-radius: 50%;
+				background: #e8e8ed;
+				box-shadow: 0 4px 9px #2222223b;
+			}
+
+			.step-title {
+				color: #363B4E;
+				margin: 0;
+				padding: 0 10px;
+				font-size: 18px;
+				line-height: 1.2;
+				font-weight: 500;
+				display: block;
+			}
+
+			&.completed,
+			&.current {
+				.step-icon {
+					border-color: $primary-color;
+					background: $primary-color;
+
+					path {
+						fill: #fff;
+					}
+				}
+			}
+
+		}
+		
+	}
+
+	.wpfnl-multistep-navigation {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: flex-end;
+		margin-top: 30px;
+
+		button[type="button"] {
+			padding: 14px 25px;
+			font-weight: 600;
+			font-size: 16px;
+			min-width: 120px;
+			background: $primary-color;
+			color: #fff;
+			border-radius: 6px;
+			margin: 0 0 0 15px;
+			box-sizing: border-box;
+			box-shadow: none;
+			outline: none;
+			border: none;
+			height: auto;
+
+			&:disabled {
+				opacity: 0.5;
+				cursor: not-allowed;
+				user-select: none;
+			}
+		}
+	}
+
+	.woocommerce-form-coupon-toggle {
+		display: none;
+	}
+
+}
+
+.wpfnl-checkout-form-wpfnl-multistep .woocommerce #customer_details.col2-set,
+.wpfnl-multistep .woocommerce #customer_details.col2-set {
+	width: 100%!important;
+    padding-right: 0;
+    margin-right: 0!important;
+    float: none!important;
+}
+
+.woocommerce-page.woocommerce-checkout .wpfnl-checkout-form-wpfnl-multistep form #order_review,
+.wpfnl-checkout-form-wpfnl-multistep .woocommerce #order_review,
+.woocommerce-page.woocommerce-checkout .wpfnl-multistep form #order_review,
+.wpfnl-multistep .woocommerce #order_review {
+    width: 100%!important;
+    padding-left: 0;
+	display: none;
+	float: none!important;
+}
+
+
+.wpfnl-checkout-form-wpfnl-multistep .user-not-logedin #wpfnl_checkout_billing,
+.wpfnl-multistep .user-not-logedin #wpfnl_checkout_billing {
+	display: none;
+}
+.wpfnl-checkout-form-wpfnl-multistep .woocommerce #wpfnl_checkout_shipping,
+.wpfnl-multistep .woocommerce #wpfnl_checkout_shipping {
+	display: none;
+}
+
+
+@media only screen and (max-width: 575px){
+	.wpfnl-checkout-form-wpfnl-multistep .wpfnl-multistep-wizard li .step-title, 
+	.wpfnl-multistep .wpfnl-multistep-wizard li .step-title {
+		font-size: 15px;
+	}
+
+}

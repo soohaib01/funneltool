@@ -1,0 +1,378 @@
+.wpfnl-modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9;
+    display: none;
+
+    .wpfnl-modal__inner {
+        width: 100%;
+        height: 100%;
+        padding: 0px 20px;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .wpfnl-modal__wrapper {
+        max-width: 1200px;
+        width: 100%;
+        background: #fff;
+        border-radius: 15px;
+        max-height: calc(100% - 160px);
+        overflow: hidden;
+        height: 100%;
+    }
+
+    //---modal header----
+    .wpfnl-modal__header {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 15px;
+        border-radius: 15px 15px 0 0;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+        position: relative;
+
+        .title {
+            h2 {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 1.3;
+                color: #363B4E;
+            }
+        }
+
+        .wpfnl-modal-close {
+            height: 28px;
+            width: 28px;
+            background: #F6F6F8;
+            border: 1px solid #E5E8F3;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 100%;
+            cursor: pointer;
+
+            svg {
+                path {
+                    stroke: $primary-color;
+                }
+            }
+        }
+    }
+
+    //---modal body----
+    .wpfnl-modal__body {
+        background: #F2F5F8;
+        padding: 23px 25px 0px;
+        overflow: auto;
+        height: calc(100% - 52px);
+
+        &::-webkit-scrollbar {
+            width: 5px; 
+        }
+        &::-webkit-scrollbar-track {
+            background: #f2f5f8;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: $primary-color;
+            border-radius: 20px;
+        }
+
+        .choose-step-type {
+            label {
+                font-weight: 500;
+                font-size: 13px;
+                line-height: 15px;
+                color: #363B4E;
+                margin-bottom: 9px;
+                display: inline-block;
+            }
+
+            select {
+                height: 36px;
+                border-radius: 5px;
+                padding: 4px 15px;
+                max-width: 100%;
+
+                &:focus {
+                    border-color: $primary-color;
+                }
+            }
+        }
+
+        .wpfnl-create-step__filter-nav {
+            margin-bottom: 30px;
+            margin-left: 5px;
+            border-bottom: 1px solid #E1E1EB;
+
+            & > li {
+                padding: 5px 0 10px;
+                cursor: pointer;
+                margin-right: 22px;
+                text-transform: capitalize;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 16px;
+                color: #7A8B9A;
+                position: relative;
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: -1px;
+                    width: 100%;
+                    height: 2px;
+                    background: $primary-color;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: all 0.3s ease;
+                }
+
+                &:hover,
+                &.active {
+                    color: $primary-color;
+                }
+
+                &.active:before {
+                    opacity: 1;
+                    visibility: visible;
+                }
+
+                .pro-tag {
+                    position: absolute;
+                    top: -9px;
+                    right: -10px;
+                    font-size: 10px;
+                    padding: 0 4px;
+                }
+
+                &.disabled{
+                    font-weight: 400;
+                    color: rgba(122, 139, 154, 0.5);
+
+                    &:hover {
+                        color: rgba(122, 139, 154, 0.5);
+                    }
+                }
+            }
+        }
+    }
+
+    //---modal footer----
+    .wpfnl-modal__footer {
+        padding: 15px 20px;
+        border-top: 1px solid #E5E8F3;
+
+        .step-save-btn {
+            display: flex;
+            flex-flow: row;
+            align-items: center;
+            justify-content: flex-end;
+
+            .wpfnl-alert {
+                margin-right: 10px;
+            }
+
+            a.btn-default {
+                background: transparent;
+                border: 1px solid #E5E8F3;
+                color: #363B4E;
+                width: 110px;
+                padding: 0 20px;
+                margin-right: 10px;
+
+                &:hover {
+                    background: rgba(0, 0, 0, 0.04);
+                }
+            }
+            button {
+                width: 110px;
+                padding: 0 20px;
+                border: 1px solid transparent;
+                display: flex;
+                flex-flow: row;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+
+//----------modal template-----------
+.wpfnl-create-step__template-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 -10px;
+    position: relative;
+
+    .create-step__single-template,
+    .create-funnel__single-template {
+        position: relative;
+        width: calc(100% / 5 - 30px);
+        min-height: 195px;
+        margin: 0 15px;
+        margin-bottom: 30px;
+        background: #fff;
+        box-shadow: 0px 2px 4px rgba(223, 223, 249, 0.25);
+        border-radius: 8px;
+        overflow: hidden;
+        display: none;
+
+        img {
+            border-radius: 8px 8px 0 0;
+            min-height: 160px;
+        }
+    }
+
+    .create-step__from-scratch {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        border: 1px dashed #A1A1B6;
+
+        .btn-default {
+            padding: 0 17px;
+            height: 40px;
+            line-height: 41px;
+            font-size: 13px;
+        }
+    }
+
+    .importar-loader {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(68, 68, 68, 0.75);
+        width: 100%;
+        height: calc(100% - 30px);
+        border-radius: 8px 8px 0 0;
+        display: none;
+
+        .title-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+
+            .title {
+                color: #fff;
+                font-size: 13px;
+                letter-spacing: 0.5px;
+            }
+        }
+
+        .dot-wrapper {
+            margin-left: 2px;
+            position: relative;
+            top: -1px;
+
+            span {
+                color: #fff;
+                font-size: 16px;
+                animation-duration: 1.5s;
+                animation-iteration-count: infinite;
+
+                &.dot-one{
+                    animation-name: flashOne;
+                }
+                &.dot-two{
+                    animation-name: flashTwo;
+                }
+                &.dot-three{
+                    animation-name: flashThree;
+                }
+            }
+        }
+    }
+
+    .funnel-template-info {
+        position: absolute;
+        bottom: -44px;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        background: #fff;
+        border-radius: 0 0 8px 8px;
+        transition: all 0.3s ease;
+        
+        .title {
+            text-transform: capitalize;
+            display: block;
+            padding: 16px 4px 13px;
+            text-align: center;
+            border-bottom: 1px solid #F4F6F7;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            color: #363B4E;
+        }
+        
+        .template-action {
+            padding: 10px 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .btn-default {
+                height: auto;
+                min-width: auto;
+                padding: 5px 9px 4px;
+                border-radius: 5px;
+                text-transform: capitalize;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 14px;
+                margin: 0 7px;
+
+                &:hover{
+                    border-color: $primary-color;
+                    background-color: $primary-color;
+                    color: #fff;
+                }
+
+                &.preview {
+                    background: #EE8134;
+                }
+            }
+        }
+    }
+
+    .create-funnel__single-template:hover {
+        .funnel-template-info {
+            bottom: 0;
+        }
+    }
+
+    .wpfnl-loader__wrapper {
+        position: absolute;
+        top: 0;
+        background: #f2f5f8;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+
+        .wpfnl-loader {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -20px;
+            margin-left: -20px;
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+.wpfnl-thankyou-wrapper ul.woocommerce-thankyou-order-details {
+    margin-bottom: 20px!important;
+}
+.woocommerce .woocommerce-customer-details .woocommerce-customer-details--email, 
+.woocommerce .woocommerce-customer-details .woocommerce-customer-details--phone {
+    padding-left: 1.5em;
+}
+.wpfnl-thankyou-wrapper ul.woocommerce-thankyou-order-details {
+    background: #fff!important;
+}

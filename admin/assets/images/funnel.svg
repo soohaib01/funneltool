@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="15px" viewBox="0 0 20 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>funnel</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Overview-" transform="translate(-207.000000, -62.000000)" fill-rule="nonzero">
+            <g id="funnel" transform="translate(207.000000, 62.000000)">
+                <polygon id="Path-Copy" fill="#EE8134" points="3.111899 10 16.888101 10 18 6 2 6"></polygon>
+                <path d="M6.01870095,15 L13.981299,15 C14.3720597,15 14.727023,14.7723921 14.8900784,14.4172769 L16,12 L4,12 L5.10992156,14.4172769 C5.27297695,14.7723921 5.62794031,15 6.01870095,15 Z" id="Path" fill="#6E42D3"></path>
+                <path d="M19.9031842,0.377062937 C19.7947468,0.14165035 19.6109969,0 19.4140438,0 L0.585928671,0 C0.389014711,0 0.205264807,0.14165035 0.0968273638,0.377062937 C-0.0116100796,0.612531469 -0.0302038199,0.910153846 0.0472961397,1.16945455 L0.89358476,4 L19.1064268,4 L19.9527154,1.16945455 C20.0302154,0.91020979 20.0115826,0.612531469 19.9031842,0.377062937 Z" id="Path" fill="#6E42D3"></path>
+            </g>
+        </g>
+    </g>
+</svg>

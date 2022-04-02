@@ -1,0 +1,162 @@
+.wpfnl-order-bump__template-style2 {
+    border-radius: 10px;
+    position: relative;
+    margin: 20px 0;
+    background-color: #f7f7f7;
+
+    .template-preview-wrapper {
+        padding: 20px 15px;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: flex-start;
+        border: 1px dashed $primary-color;
+        border-radius: 0 0 10px 10px;
+        border-top: none;
+
+        .template-img {
+            width: 150px;
+            height: 150px;
+            background-color: #F2F2F8;
+            border-radius: 10px;
+            position: relative;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            object-fit: cover;
+        }
+
+        .for-mobile {
+            display: none;
+            border-radius: 10px;
+        }
+
+        .template-content {
+            width: calc(100% - 150px);
+            padding-left: 20px;
+        }
+        .template-title {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            color: #363B4E;
+            margin: 0 0 9px 0;
+        }
+        .subtitle {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            color: $primary-color;
+            margin-bottom: 14px;
+        }
+        .description {
+            font-size: 13px;
+            line-height: 20px;
+            color: #7A8B9A;
+            margin: 0;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+    }
+
+    .offer-checkbox {
+        background-color: $primary-color;
+        padding: 8px 15px;
+        border-radius: 10px 10px 0 0;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: flex-start;
+        border: 1px dashed #6e42d3;
+
+        .nav-arrow {
+            display: inherit;
+            line-height: normal;
+            position: relative;
+            top: 2px;
+            margin-right: 10px;
+        }
+
+        .wpfnl-checkbox {
+            line-height: normal;
+            display: inherit;
+            width: calc(100% - 130px);
+        }
+        .wpfnl-checkbox label {
+            font-weight: 500;
+            color: #d9d9d9;
+            padding: 0 0 0 20px;
+            font-size: 12px;
+            line-height: 14px;
+            margin: 0;
+        }
+        .wpfnl-checkbox label:before {
+            top: 2px;
+            border: none;
+            width: 12px;
+            height: 12px;
+        }
+        .wpfnl-checkbox label:after {
+            left: 2px;
+            top: 5px;
+            width: 8px;
+            height: 5px;
+            border-bottom-color: $primary-color;
+            border-left-color: $primary-color;
+        }
+        .wpfnl-checkbox input[type=checkbox]:checked + label::before {
+            background-color: #fff;
+            border-color: #ffffff;
+        }
+
+        .product-price {
+            display: inline-block;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 14px;
+            color: #EE8134;
+            margin-left: auto;
+
+            span {
+                font-size: 12px;
+                line-height: 14px;
+                color: #EE8134;
+                font-weight: 500;
+                line-height: normal;
+            }
+
+            ins {
+                text-decoration: none;
+                background: transparent;
+            }
+
+        }
+    }
+}
+
+
+//------responsive style-------
+@media only screen and (max-width: 460px) {
+    .wpfnl-order-bump__template-style2 .template-preview-wrapper {
+        padding: 15px;
+        display: block;
+    }
+    .wpfnl-order-bump__template-style2 .template-preview-wrapper .template-img {
+        width: auto;
+        height: auto;
+        background-image: none!important;
+    }
+    .wpfnl-order-bump__template-style2 .template-preview-wrapper .for-mobile {
+        display: block;
+        border-radius: 10px;
+        margin-bottom: 16px;
+    }
+    .wpfnl-order-bump__template-style2 .template-preview-wrapper .template-content {
+        width: 100%;
+        padding-left: 0;
+    }
+    .wpfnl-order-bump__template-style2 .offer-checkbox {
+        padding: 9px 15px 13px;
+    }
+}

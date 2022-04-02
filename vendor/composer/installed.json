@@ -1,0 +1,155 @@
+{
+    "packages": [
+        {
+            "name": "appsero/client",
+            "version": "dev-develop",
+            "version_normalized": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Appsero/client.git",
+                "reference": "1d7ec1afa27b82c657f8a14a78e5d5f6bef16373"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Appsero/client/zipball/1d7ec1afa27b82c657f8a14a78e5d5f6bef16373",
+                "reference": "1d7ec1afa27b82c657f8a14a78e5d5f6bef16373",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "time": "2021-07-14T11:42:45+00:00",
+            "default-branch": true,
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Appsero\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tareq Hasan",
+                    "email": "tareq@appsero.com"
+                }
+            ],
+            "description": "Appsero Client",
+            "keywords": [
+                "analytics",
+                "plugin",
+                "theme",
+                "wordpress"
+            ],
+            "support": {
+                "issues": "https://github.com/Appsero/client/issues",
+                "source": "https://github.com/Appsero/client/tree/develop"
+            },
+            "install-path": "../appsero/client"
+        },
+        {
+            "name": "deliciousbrains/wp-background-processing",
+            "version": "1.0.2",
+            "version_normalized": "1.0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/deliciousbrains/wp-background-processing.git",
+                "reference": "2cbee1abd1b49e1133cd8f611df4d4fc5a8b9800"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/deliciousbrains/wp-background-processing/zipball/2cbee1abd1b49e1133cd8f611df4d4fc5a8b9800",
+                "reference": "2cbee1abd1b49e1133cd8f611df4d4fc5a8b9800",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2"
+            },
+            "suggest": {
+                "coenjacobs/mozart": "Easily wrap this library with your own prefix, to prevent collisions when multiple plugins use this library"
+            },
+            "time": "2020-07-31T07:00:11+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "classmap": [
+                    "classes/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Delicious Brains",
+                    "email": "nom@deliciousbrains.com"
+                }
+            ],
+            "description": "WP Background Processing can be used to fire off non-blocking asynchronous requests or as a background processing tool, allowing you to queue tasks.",
+            "support": {
+                "issues": "https://github.com/deliciousbrains/wp-background-processing/issues",
+                "source": "https://github.com/deliciousbrains/wp-background-processing/tree/master"
+            },
+            "install-path": "../deliciousbrains/wp-background-processing"
+        },
+        {
+            "name": "philipnewcomer/wp-ajax-helper",
+            "version": "1.0.1",
+            "version_normalized": "1.0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/philipnewcomer/wp-ajax-helper.git",
+                "reference": "3416943af039cbca4eba1efbf4d9f728860e3a5e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/philipnewcomer/wp-ajax-helper/zipball/3416943af039cbca4eba1efbf4d9f728860e3a5e",
+                "reference": "3416943af039cbca4eba1efbf4d9f728860e3a5e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "time": "2017-06-25T22:19:09+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "files": [
+                    "src/functions.php"
+                ],
+                "psr-4": {
+                    "PhilipNewcomer\\WP_Ajax_Helper\\": "src/components"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Philip Newcomer",
+                    "email": "contact@philipnewcomer.net",
+                    "homepage": "http://philipnewcomer.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A library to simplify AJAX requests in WordPress plugins and themes.",
+            "homepage": "https://github.com/philipnewcomer/wp-ajax-helper",
+            "keywords": [
+                "ajax",
+                "wordpress"
+            ],
+            "support": {
+                "issues": "https://github.com/philipnewcomer/wp-ajax-helper/issues",
+                "source": "https://github.com/philipnewcomer/wp-ajax-helper/tree/1.0.1"
+            },
+            "install-path": "../philipnewcomer/wp-ajax-helper"
+        }
+    ],
+    "dev": false,
+    "dev-package-names": []
+}

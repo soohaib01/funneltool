@@ -1,0 +1,19 @@
+@import 'default';
+@import 'elements';
+@import 'checkout-page';
+@import 'thankyou-page';
+@import 'upsell';
+@import 'order-bump';
+@import 'next-step-block';
+@import 'multistep-checkout';
+@import 'optin-form';
+
+//----order bump template styles----
+@import 'order-bump-template-style1';
+@import 'order-bump-template-style2';
+@import 'order-bump-template-style3';
+
+//----theme support----
+@import 'theme-support/astra';
+@import 'theme-support/storefront';
+@import 'theme-support/twenty-twenty-two';

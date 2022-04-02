@@ -1,0 +1,120 @@
+//1. checkbox style
+//2. redio button style
+
+
+//------1. checkbox style-------
+.wpfnl-checkbox {
+    input[type=checkbox] {
+        display: none;
+    }
+
+    &.no-title label {
+        height: 14px;
+    }
+
+    label {
+        font-size: 12px;
+        line-height: 14px;
+        font-weight: 400;
+        color: #7A8B9A;
+        position: relative;
+        padding-left: 29px;
+        display: inline-block;
+        text-transform: capitalize;
+        cursor: pointer;
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: -3px;
+            width: 18px;
+            height: 18px;
+            border-radius: 4px;
+            border: 1px solid #E5E8F3;
+            background-color: #f6f6f8;
+            transition: all 0.3s ease;
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            left: 5px;
+            top: 3px;
+            width: 9px;
+            height: 4px;
+            transform: rotate(-45deg);
+            border-bottom: 2px solid #fff;
+            border-left: 2px solid #fff;
+            transition: all 0.3s ease;
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+
+    input[type=checkbox]:checked + label::before {
+        background-color:$primary-color;
+        border-color: $primary-color;
+    }
+    input[type=checkbox]:checked + label::after {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+//----2. radio button style-------
+.wpfnl-radiobtn {
+
+    input[type=radio] {
+        display: none;
+    }
+
+    &.no-title label {
+        height: 16px;
+    }
+    
+    label {
+        font-size: 12px;
+        line-height: 14px;
+        font-weight: 400;
+        color: #7A8B9A;
+        position: relative;
+        padding-left: 29px;
+        display: inline-block;
+        text-transform: capitalize;
+        cursor: pointer;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: -3px;
+            width: 18px;
+            height: 18px;
+            border-radius: 100%;
+            background: #F7F7FA;
+            border: 1px solid #E5E8F3;
+            transition: all 0.3s ease;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            left: 5px;
+            top: 2px;
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            background: $primary-color;
+            transform: scale(0);
+            transition: all 0.3s ease;
+        }
+    }
+
+    input[type="radio"]:checked + label::before {
+        border-color: $primary-color;
+    }
+    input[type="radio"]:checked + label::after {
+        transform: scale(1);
+    }
+    
+}
+

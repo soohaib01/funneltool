@@ -1,0 +1,51 @@
+
+.elementor-element .icon-wpfnl {
+    position: relative;
+}
+
+.elementor-element .icon-wpfnl:before {
+    content: '';
+    height: 28px;
+    width: 28px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    display: block;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+}
+
+.elementor-element .icon-wpfnl.checkout-icon::before {
+    background-image: url(../images/elementor-widget-icon/checkout.png);
+}
+.elementor-element:hover .icon-wpfnl.checkout-icon::before {
+    background-image: url(../images/elementor-widget-icon/checkout-hover.png);
+}
+
+.elementor-element .icon-wpfnl.next-step::before {
+    background-image: url(../images/elementor-widget-icon/next-step.png);
+}
+.elementor-element:hover .icon-wpfnl.next-step::before {
+    background-image: url(../images/elementor-widget-icon/next-step-hover.png);
+}
+
+.elementor-element .icon-wpfnl.order-details::before {
+    background-image: url(../images/elementor-widget-icon/order-details.png);
+}
+.elementor-element:hover .icon-wpfnl.order-details::before {
+    background-image: url(../images/elementor-widget-icon/order-details-hover.png);
+}
+
+.elementor-element .icon-wpfnl.sell-accept::before {
+    background-image: url(../images/elementor-widget-icon/sale-accept.png);
+}
+.elementor-element:hover .icon-wpfnl.sell-accept::before {
+    background-image: url(../images/elementor-widget-icon/sale-accept-hover.png);
+}
+
+.elementor-element .icon-wpfnl.sell-reject::before {
+    background-image: url(../images/elementor-widget-icon/sale-reject.png);
+}
+.elementor-element:hover .icon-wpfnl.sell-reject::before {
+    background-image: url(../images/elementor-widget-icon/sale-reject-hover.png);
+}

@@ -1,0 +1,27 @@
+.wpfnl-upsell-btn-wrapper {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+
+    button {
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+
+        .wpfnl-loader {
+            margin-left: 8px;
+            border-color: #fff;
+            border-top-color: transparent;
+            width: 14px;
+            height: 14px;
+        }
+    }
+
+    .wpfnl-alert{
+        margin-top: 5px;
+
+        &.box {
+            margin-top: 7px;
+        }
+    }
+}

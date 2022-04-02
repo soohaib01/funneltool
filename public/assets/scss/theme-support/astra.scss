@@ -1,0 +1,78 @@
+/*----------start checkout page style--------*/
+.theme-astra {
+    #customer_details h3:not(.elementor-widget-woocommerce-checkout-page h3) {
+        font-size: 22px;
+        padding: 15px 20px;
+        margin: 0;
+        border-bottom: none;
+    }
+
+    &.woocommerce.woocommerce-checkout form #customer_details.col2-set, 
+    &.woocommerce-page.woocommerce-checkout form #customer_details.col2-set {
+        width: 50%;
+        float: none;
+        margin-right: 0;
+    }
+    form #order_review:not(.elementor-widget-woocommerce-checkout-page #order_review) {
+        padding: 0 0 0 10px;
+        border: none;
+    }
+    &.woocommerce.woocommerce-checkout form #order_review, 
+    &.woocommerce-page.woocommerce-checkout form #order_review {
+        width: 50%;
+        float: none;
+        margin-right: 0;
+        clear: right;
+    }
+    form #order_review_heading:not(.elementor-widget-woocommerce-checkout-page #order_review_heading) {
+        border: 1px solid #E5E8F3;
+        border-bottom: none;
+        font-size: 22px;
+        margin: 0;
+        padding: 15px 20px;
+    }
+
+}
+
+//------1column style------
+.theme-astra.woocommerce.woocommerce-checkout .wpfnl-checkout-form-one-column form #customer_details.col2-set, 
+.theme-astra.woocommerce-page.woocommerce-checkout .wpfnl-checkout-form-one-column form #customer_details.col2-set,
+.theme-astra.woocommerce.woocommerce-checkout .wpfnl-checkout.wpfnl-col-1 form #customer_details.col2-set, 
+.theme-astra.woocommerce-page.woocommerce-checkout .wpfnl-checkout.wpfnl-col-1 form #customer_details.col2-set {
+    width: 100%;
+    float: none;
+    margin-right: 0;
+}
+.theme-astra.woocommerce.woocommerce-checkout .wpfnl-checkout-form-one-column form #order_review, 
+.theme-astra.woocommerce-page.woocommerce-checkout .wpfnl-checkout-form-one-column form #order_review,
+.theme-astra.woocommerce.woocommerce-checkout .wpfnl-checkout.wpfnl-col-1 form #order_review, 
+.theme-astra.woocommerce-page.woocommerce-checkout .wpfnl-checkout.wpfnl-col-1 form #order_review {
+    width: 100%;
+}
+.theme-astra .wpfnl-checkout-form-one-column form #order_review:not(.elementor-widget-woocommerce-checkout-page #order_review),
+.theme-astra .wpfnl-checkout.wpfnl-col-1 form #order_review:not(.elementor-widget-woocommerce-checkout-page #order_review) {
+    padding-left: 0;
+}
+
+//------multistep style------
+.theme-astra .wpfnl-checkout-form-wpfnl-multistep form #order_review:not(.elementor-widget-woocommerce-checkout-page #order_review),
+.theme-astra .wpfnl-multistep form #order_review:not(.elementor-widget-woocommerce-checkout-page #order_review) {
+    padding: 0;
+}
+//*----------end checkout page style--------*/
+
+
+@media only screen and (max-width: 991px){ 
+    .theme-astra.woocommerce.woocommerce-checkout form #customer_details.col2-set, 
+    .theme-astra.woocommerce-page.woocommerce-checkout form #customer_details.col2-set {
+        width: 100%;
+    }
+    .theme-astra form #order_review:not(.elementor-widget-woocommerce-checkout-page #order_review) {
+        padding: 0;
+        border: none;
+    }
+    .theme-astra.woocommerce.woocommerce-checkout form #order_review, 
+    .theme-astra.woocommerce-page.woocommerce-checkout form #order_review {
+        width: 100%;
+    }
+}

@@ -1,0 +1,11 @@
+
+.icon-wpfnl:before {
+    content: '';
+    height: 30px;
+    width: 30px;
+    background: url('../images/icon.png') no-repeat center center / 100% 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+

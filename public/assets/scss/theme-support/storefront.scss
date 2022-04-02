@@ -1,0 +1,38 @@
+.theme-storefront {
+    #order_review_heading, 
+    #order_review {
+        width: 50%;
+        float: none;
+    }
+
+    #payment .payment_methods li.woocommerce-PaymentMethod>input[type=radio]:first-child:checked+label::before, #payment .payment_methods li.wc_payment_method>input[type=radio]:first-child:checked+label::before {
+        content: "";
+    }
+    #payment .place-order {
+        margin-top: 0;
+        border-radius: 0 0 10px 10px;
+    }
+    #payment .payment_methods li .payment_box fieldset {
+        padding: 0;
+        font-size: inherit;
+        background: transparent;
+    }
+    #order_review .shop_table {
+        margin-bottom: 20px;
+    }
+}
+
+//--------1column style------
+.theme-storefront .wpfnl-checkout-form-one-column #order_review_heading, 
+.theme-storefront .wpfnl-checkout-form-one-column #order_review,
+.theme-storefront .wpfnl-col-1 #order_review_heading, 
+.theme-storefront .wpfnl-col-1 #order_review {
+    width: 100%;
+}
+
+@media only screen and (max-width: 991px){
+    .theme-storefront #order_review_heading, 
+    .theme-storefront #order_review {
+        width: 100%;
+    }
+}
